@@ -4,7 +4,7 @@ export default function Purchase() {
   const HOST = 'http://localhost:3000/'
   const [usersData, setUsersData] = useState([]);
   useEffect(() => {
-    const fetchUser = async () => {
+    const fetchUsers = async () => {
       try {
         const response = await fetch(HOST+'users');
         const data = await response.json();
@@ -13,7 +13,7 @@ export default function Purchase() {
         console.error('Error fetching user:', error);
       }
     };
-    fetchUser();
+    fetchUsers();
   }, []);
   
 
