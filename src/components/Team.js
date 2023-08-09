@@ -38,8 +38,8 @@ export default function Team() {
           </p>
         </div>
         <ul role="list" className="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2">
-          {people.map((person) => (
-            <li key={person.name}>
+          {people.map((person, i) => (
+            <li key={person.name+(i+1)}>
               <div className="flex items-center gap-x-6">
                 <img className="h-16 w-16 rounded-full" src={person.imageUrl} alt="" />
                 <div>
