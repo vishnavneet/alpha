@@ -5,9 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
-import { createStore } from "redux";
-import counterReducer from './redux/Counter/counterReducer';
-const store = createStore(counterReducer);
+import store from './redux/store'
 // configureStore
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
