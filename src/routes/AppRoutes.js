@@ -6,6 +6,9 @@ import Products from '../pages/Products'
 import Contact from '../pages/Contact'
 import Purchase from '../pages/Purchase'
 import Forms from '../pages/Forms'
+import User from '../pages/user/user'
+import Packages from '../pages/user/bookings/package/packages'
+import Movies from '../pages/user/bookings/movie/movies'
 
 export default function AppRoutes() {
   return (
@@ -16,6 +19,9 @@ export default function AppRoutes() {
       <Route path="/contact" element={<Contact/>} />
       <Route path="/purchase" element={<Purchase/>} />
       <Route path="/forms" element={<Forms/>} />
+      <Route path="/user" element={<User/>} />
+      <Route path="/user/bookings/packages" element={<Packages/>} />
+      <Route path="/user/bookings/movies" element={<Movies/>} />
     </Routes>
   )
 }
