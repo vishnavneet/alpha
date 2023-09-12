@@ -51,13 +51,13 @@ export default function Purchase() {
   };
 
   const EditTableRow = (id, name, email) => {
-    // console.log({ id, name, email });
+    console.log({ id, name, email });
   };
 
   return (
     <div className="mx-auto max-w-7xl px-6 pb-8 pt-16 sm:pt-24 lg:px-8">
       {/* two column grid tailwind */}
-      <AlertMsg className='alert rounded-md p-4 bg-green-50' alertMsg='Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid pariatur, ipsum similique veniam.' statusMsg='Order completed'/>
+      <AlertMsg className='alert rounded-md p-4 bg-green-50' alertMsg='Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid pariatur, ipsum similique veniam.' statusMsg='Record Added Succesfully'/>
       <div className="grid grid-cols-2">
         <div>
           <table className="min-w-full divide-y divide-gray-300 border">
@@ -119,7 +119,7 @@ export default function Purchase() {
                 })}
             </tbody>
           </table>
-          <Counter/>
+          {/* <Counter/> */}
         </div>
         <div>
           <form className="max-w-md mx-auto" onSubmit={handleSubmitUser}>

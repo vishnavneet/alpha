@@ -5,6 +5,7 @@ import About from '../pages/About'
 import Products from '../pages/Products'
 import Contact from '../pages/Contact'
 import Purchase from '../pages/Purchase'
+import Forms from '../pages/Forms'
 
 export default function AppRoutes() {
   return (
@@ -14,6 +15,7 @@ export default function AppRoutes() {
       <Route path="/products" element={<Products/>} />
       <Route path="/contact" element={<Contact/>} />
       <Route path="/purchase" element={<Purchase/>} />
+      <Route path="/forms" element={<Forms/>} />
     </Routes>
   )
 }

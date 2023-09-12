@@ -9,6 +9,7 @@ const navigation = [
   { name: 'Products', to: 'products', current: false },
   { name: 'Contact', to: 'contact', current: false },
   { name: 'Purchase', to: 'purchase', current: false },
+  { name: 'Forms', to: 'forms', current: false },
 ]
 
 function classNames(...classes) {
