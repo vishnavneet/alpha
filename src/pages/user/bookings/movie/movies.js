@@ -1,7 +1,11 @@
 import React from 'react'
+import { UserContextProvider } from '../../UserContextProvider'
+import UserConsumer from '../../userConsumer'
 
-export default function Movies() {
+export default function Movies(children) {
   return (
-    <div>Movies Booking for: (Name) </div>
+    <UserContextProvider>
+      <UserConsumer />
+  </UserContextProvider>
   )
 }

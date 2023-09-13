@@ -1,7 +1,11 @@
 import React from 'react'
+import { UserContextProvider } from '../../UserContextProvider'
+import UserConsumer from '../../userConsumer'
 
 export default function Packages() {
   return (
-    <div>Packages</div>
+    <UserContextProvider>
+        <UserConsumer />
+    </UserContextProvider>
   )
 }
